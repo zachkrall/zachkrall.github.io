@@ -1,36 +1,40 @@
 <html>
 <head>
-    
-    <title>Hello, World</title>
-  
-    <style type="text/css">
-        html, *{
-            margin:0;padding:0;
-        }
-        html{
-            width:100%;
-            height:100%;
-        }
-        body{
-            background:#000;
-            background-image:url('https://web.archive.org/web/20091027023331/http://hk.geocities.com/spacestationhk/bg.gif');
-            
-            font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-            font-size:8pt;
-            font-weight:bold;
-            color:#fff;
-            
-            text-align:center;
-        }
-        header, section, footer{
-            padding:2rem;
-        }   
-    </style>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hello, World | Zach Krall</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://vuejs.org/js/vue.js"></script>
 
 </head>
 <body>
-  
-<h1>untitled</h1>
 
+  <header>
+  <h1>Hello, World</h1>
+  </header>
+
+  <div id="about">
+  Zach Krall is an artist-coder based in Brooklyn, NY. Learn more at <a href="https://zachkrall.com">my website</a> or <a href="http://resume.zachkrall.com">my resume</a>.
+  </div>
+
+  <div id="loading">Loading...</div>
+  <div id="app">
+
+    <section v-for="section in portfolio" class="projects">
+    <h2>{{ section.data.length }} {{ section.title }}</h2>
+      <div v-for="item in section.data" class="project">
+        <span class="pTitle">{{ item.title }}</span>
+        <span class="pDesc">{{ item.desc.toLowerCase() }}</span>
+        <span class="pLink" v-if="item.link"><a v-bind:href="item.link.url">{{ item.link.title.toLowerCase() }}</a></span>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
