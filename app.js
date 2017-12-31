@@ -6,7 +6,15 @@ var app = new Vue({
       {
         title: 'Websites',
         data: [
-        {
+          {
+            title: 'Chinatown Soup',
+            desc: 'Built a fun little homepage interaction for their homepage in addition to building out their Squarespace content',
+            link: {
+              url: 'https://zachkrall.github.io/chinatown-soup',
+              title: 'Interaction Demo'
+            }
+          },
+          {
           title: 'Zach Krall',
           desc: 'My portfolio built with Gatsby',
           link: {
