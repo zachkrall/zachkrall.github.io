@@ -58,11 +58,11 @@ export const ProjectList = () => [
   },
   {
     title: '{this.page}',
-    desc: '',
+    desc: 'This site uses phenomic and react to generate a static page',
     tags: ['react', 'phenomic'],
     link: {
-      url: 'https://github.com/zachkrall/zachkrall.github.io',
-      title: 'Source Code'
+      url: 'https://github.com/zachkrall/zachkrall.github.io/tree/dev',
+      title: 'View Source Code'
     }
   },
   {
