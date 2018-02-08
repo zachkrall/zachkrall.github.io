@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'DejaVu Sans Mono';
-  src: url('/public/DejaVuSansMono.ttf') format('truetype');
+  src: url('/fonts/DejaVuSansMono.ttf') format('truetype');
 }
 @font-face {
   font-family: 'DejaVu Sans Mono';
-  src: url('/public/DejaVuSansMono.ttf') format('truetype');
+  src: url('/fonts/DejaVuSansMono.ttf') format('truetype');
   font-weight:bold;
 }
 @font-face {
   font-family: 'Aktiv Grotesk';
-  src: url('/public/AktivGroteskStdReg.ttf') format('truetype');
+  src: url('/fonts/AktivGroteskStdReg.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Aktiv Grotesk';
-  src: url('/public/AktivGroteskStdBd.ttf') format('truetype');
+  src: url('/fonts/AktivGroteskStdBd.ttf') format('truetype');
   font-weight:bold;
 }
 
@@ -45,7 +45,10 @@ a{
 a:hover{
   color:#6650F5;
 }
-
+#wrapper{
+  max-width:1500px;
+  margin:0 auto;
+}
 header{
   padding:3rem 2rem 2rem 2rem;
 }
@@ -60,13 +63,21 @@ header h1{
   padding:0rem 2rem;
 }
 
-#projects{
+.projectWrapper h1.noFlex{
+  flex: 0 0 100%;
+  padding:2rem;
+  text-align:center;
+  box-sizing:border-box;
+  font-size: inherit;
+}
+
+.projectWrapper{
   margin:3rem 0 4rem 0;
 
   display:flex;
   flex-wrap: wrap;
 }
-#projects h2{
+.projectWrapper h2{
   /* color:#3CAB7A; */
   /* color:#5F728F; */
   font-size:inherit;
@@ -76,6 +87,13 @@ header h1{
   display:block;
   padding:2rem;
   width:calc(100%/3);
+}
+.project .image{
+
+}
+.project .image img{
+  width:100%;height:auto;
+  box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 .project .tags{
   color:#5F728F;
