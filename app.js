@@ -1,108 +1,55 @@
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!',
-    portfolio: [
-      {
-        title: 'Websites',
-        data: [
-          {
-            title: 'Chinatown Soup',
-            desc: 'Built a fun little homepage interaction for their homepage in addition to building out their Squarespace content',
-            link: {
-              url: 'https://zachkrall.github.io/chinatown-soup',
-              title: 'Interaction Demo'
-            }
-          },
-          {
-          title: 'Zach Krall',
-          desc: 'My portfolio built with Gatsby',
-          link: {
-            url: 'https://zachkrall.com',
-            title: 'Live Website'
-          }
-        },
-        {
-          title: 'Shaun Gladwell',
-          desc: 'An archive for Shaun\'s publications',
-          link: {
-            url: 'https://zachkrall.github.io/shaun-gladwell/',
-            title: 'GitHub'
-          }
-        },
-        {
-          title: 'BadFaith VR',
-          desc: 'Website for VR artist collective',
-          link: {
-            url: 'http://zachkrall.github.io/BadfaithVR/',
-            title: 'Retired'
-          }
-        }
-      ]
-    },
-    {
-      title: 'Personal Projects',
-      data: [
-        {
-          title: 'Stylized Text Generator',
-          desc: '👏 get 👏 your 👏 point 👏 across 👏',
-          link: {
-            url: 'https://zachkrall.github.io/stylized-text-generator/',
-            title: 'GitHub'
-          }
-        },
-        {
-          title: 'Krall Bot',
-          desc: 'A twitter bot based on my tweets',
-          link: {
-            url: 'https://twitter.com/krallbot',
-            title: 'Twitter'
-          }
-        },
-        {
-          title: 'Resume Chat',
-          desc: 'A chat interface to learn about me',
-          link: {
-            url: 'https://zachkrall.github.io/resume-chat/',
-            title: 'GitHub'
-          }
-        },
-        {
-          title: 'Conservative Hashtag Generator',
-          desc: '#lyinsnowflake',
-          link: {
-            url: 'https://zachkrall.github.io/conservative-hashtag/',
-            title: 'GitHub'
-          }
-        }
-      ]
-    },
-    {
-      title: 'Sketchbooks',
-      data: [
-        {
-          title: 'p5.js',
-          desc: '',
-          link: {
-            url: 'https://zachkrall.github.io/p5-sketches',
-            title: 'View'
-          }
-        },
-        {
-          title: 'three.js',
-          desc: '',
-          link: {
-            url: 'https://zachkrall.github.io/p5-sketches',
-            title: 'View'
-          }
-        }
-      ]
-    }
-  ]
-  }
-})
+import React from "react";
+import { Router, Route, browserHistory } from "react-router";
+import { createApp } from "@phenomic/preset-react-app/lib/client";
+import Head from "react-helmet";
+import { ProjectList, InProgressList, Footer } from "./template.js";
+import "./style.css";
 
-Vue.nextTick(function () {
-   document.getElementById('loading').style.display = 'none';
-   document.getElementById('app').style.display = 'block';
-})
+const Home = () => (
+  <div id="wrapper">
+
+    <Head>
+      <meta charset="utf-8"/>
+      <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <title>Hello world</title>
+      <meta name="description" content="" />
+    </Head>
+
+    <header>
+      <h1>Zach Krall</h1>
+    </header>
+
+    <div id="projects" className="projectWrapper">
+      <ProjectList/>
+    </div>
+
+    <div id="inprogress" className="projectWrapper">
+    <h1 className="noFlex">In-Progress</h1>
+      <InProgressList/>
+    </div>
+
+    <Footer/>
+  </div>
+);
+
+const PageError = ({ error }) => {
+  const status = (error && error.status) || 404;
+  const message = error && status !== 404 ? error.statusText : "Page Not Found";
+
+  return (
+    <div id="404">
+      <Head>
+        <title>{message}</title>
+      </Head>
+      <h1 style={{margin:'4rem'}}>{message}</h1>
+    </div>
+  );
+};
+
+export default createApp(() => (
+  <Router history={browserHistory}>
+    <Route path="/" component={Home} />
+    <Route path="*" component={PageError} />
+  </Router>
+));
