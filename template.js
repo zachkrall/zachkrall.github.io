@@ -70,7 +70,7 @@ export const ProjectList = () => [
     desc: 'How did it end up like this?',
     tags: ['p5.js'],
     link: {
-      url: 'https://s.codepen.io/zachkrall/debug/ZJbgLJ/YvkgOPZbqGOk',
+      url: 'https://codepen.io/zachkrall/full/ZJbgLJ/',
       title: 'View on CodePen'
     },
     image: '/img_404.png'
@@ -107,10 +107,10 @@ export const ProjectList = () => [
   },
   {
     title: 'Business Hours Indicator',
-    desc: 'Provides quick feedback to website visit if busiess is currently open or closed',
+    desc: 'Provides quick feedback to website visit if business is currently open or closed',
     tags: ['jquery', 'sass'],
     link: {
-      url: 'https://codepen.io/zachkrall/pen/RQozpx',
+      url: 'https://codepen.io/zachkrall/full/Qgzzjg/',
       title: 'CodePen'
     },
     image: '/img_Hours.png'
@@ -130,7 +130,7 @@ export const ProjectList = () => [
     desc: 'Cash Rules Everything Around Me',
     tags: ['jquery'],
     link: {
-      url: 'https://s.codepen.io/zachkrall/debug/wdZpPY/wQAPoZXwVBPr',
+      url: 'https://codepen.io/zachkrall/full/wdZpPY/',
       title: 'View on CodePen'
     },
     image: '/img_Donations.png'
