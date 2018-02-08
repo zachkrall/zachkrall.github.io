@@ -12,7 +12,7 @@ const Home = () => (
       <meta charset="utf-8"/>
       <meta http-equiv="x-ua-compatible" content="ie=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-      <title>Hello world</title>
+      <title>Zach Krall</title>
       <meta name="description" content="" />
     </Head>
 
@@ -40,7 +40,7 @@ const PageError = ({ error }) => {
   return (
     <div id="404">
       <Head>
-        <title>{message}</title>
+        <title>{message} - Zach Krall</title>
       </Head>
       <h1 style={{margin:'4rem'}}>{message}</h1>
     </div>
