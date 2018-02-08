@@ -22,7 +22,7 @@ class ProjectItem extends React.Component{
 )}
 };
 ProjectItem.defaultProps = {
-  image: '/images/placeholder.jpg'
+  image: '/img_placeholder.jpg'
 };
 
 export const ProjectList = () => [
@@ -34,7 +34,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/chinatown-soup',
       title: 'View'
     },
-    image: '/images/ChinatownSoup.png'
+    image: '/img_ChinatownSoup.png'
   },
   {
     title: 'zachkrall.com',
@@ -44,7 +44,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.com',
       title: 'Live Website'
     },
-    image: '/images/ZachKrall.png'
+    image: '/img_ZachKrall.png'
   },
   {
     title: 'Shaun Gladwell',
@@ -54,7 +54,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/shaun-gladwell/',
       title: 'View'
     },
-    image: '/images/ShaunGladwell.png'
+    image: '/img_ShaunGladwell.png'
   },
   {
     title: '{this.page}',
@@ -73,7 +73,7 @@ export const ProjectList = () => [
       url: 'https://s.codepen.io/zachkrall/debug/ZJbgLJ/YvkgOPZbqGOk',
       title: 'View on CodePen'
     },
-    image: '/images/404.png'
+    image: '/img_404.png'
   },
   {
     title: 'Stylized Text Generator',
@@ -83,7 +83,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/stylized-text-generator/',
       title: 'View'
     },
-    image: '/images/Clap.png'
+    image: '/img_Clap.png'
   },
   {
     title: 'Resume Chat',
@@ -93,7 +93,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/resume-chat/',
       title: 'View'
     },
-    image: '/images/ResumeChat.png'
+    image: '/img_ResumeChat.png'
   },
   {
     title: 'Kinect VR @ Art-A-Hack',
@@ -103,7 +103,7 @@ export const ProjectList = () => [
       url: 'https://artahack.io/projects/kinect-vr/',
       title: 'View Project Page'
     },
-    image: '/images/KinectVR.png'
+    image: '/img_KinectVR.png'
   },
   {
     title: 'Business Hours Indicator',
@@ -113,7 +113,7 @@ export const ProjectList = () => [
       url: 'https://codepen.io/zachkrall/pen/RQozpx',
       title: 'CodePen'
     },
-    image: '/images/Hours.png'
+    image: '/img_Hours.png'
   },
   {
     title: 'Conservative Hashtag Generator',
@@ -123,7 +123,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/conservative-hashtag/',
       title: 'View'
     },
-    image: '/images/ConservativeHashtag.png'
+    image: '/img_ConservativeHashtag.png'
   },
   {
     title: 'Donation Button',
@@ -133,7 +133,7 @@ export const ProjectList = () => [
       url: 'https://s.codepen.io/zachkrall/debug/wdZpPY/wQAPoZXwVBPr',
       title: 'View on CodePen'
     },
-    image: '/images/Donations.png'
+    image: '/img_Donations.png'
   }
 ].map( ( { title, desc, link, tags, image } ) => {
     return <ProjectItem title={title} desc={desc} link={link} tags={tags} image={image} />
