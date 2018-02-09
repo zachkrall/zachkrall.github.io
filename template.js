@@ -27,6 +27,16 @@ ProjectItem.defaultProps = {
 
 export const ProjectList = () => [
   {
+    title: 'Calculator',
+    desc: 'It does math!',
+    tags: ['javascript'],
+    link: {
+      url: 'https://codepen.io/zachkrall/full/zRZvyq/',
+      title: 'View on CodePen'
+    },
+    image: '/img_calculator.png'
+  },
+  {
     title: 'Chinatown Soup',
     desc: 'Built a fun little homepage interaction for their homepage in addition to building out their Squarespace content',
     tags: ['jquery'],
@@ -79,7 +89,7 @@ export const ProjectList = () => [
   {
     title: 'Stylized Text Generator',
     desc: '👏 get 👏 your 👏 point 👏 across 👏',
-    tags: ['vanilla-js'],
+    tags: ['javascript'],
     link: {
       url: 'https://zachkrall.github.io/stylized-text-generator/',
       title: 'View'
