@@ -17,7 +17,7 @@ const Home = () => (
     </Head>
 
     <header>
-      <h1>Zach Krall</h1>
+      <h1>Zach Krall is a front-end developer located in Brooklyn, NY.</h1>
     </header>
 
     <div id="projects" className="projectWrapper">

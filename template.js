@@ -57,13 +57,14 @@ export const ProjectList = () => [
     image: '/img_ShaunGladwell.png'
   },
   {
-    title: '{this.page}',
-    desc: 'This site uses phenomic and react to generate a static page',
+    title: 'zachkrall.github.io',
+    desc: 'This site you are currently browsing uses Phenomic and React',
     tags: ['react', 'phenomic'],
     link: {
       url: 'https://github.com/zachkrall/zachkrall.github.io/tree/dev',
       title: 'View Source Code'
-    }
+    },
+    image: '/img_this.png'
   },
   {
     title: '404 Particle System',
@@ -78,7 +79,7 @@ export const ProjectList = () => [
   {
     title: 'Stylized Text Generator',
     desc: '👏 get 👏 your 👏 point 👏 across 👏',
-    tags: ['vanilla'],
+    tags: ['vanilla-js'],
     link: {
       url: 'https://zachkrall.github.io/stylized-text-generator/',
       title: 'View'
@@ -116,8 +117,8 @@ export const ProjectList = () => [
     image: '/img_Hours.png'
   },
   {
-    title: 'Conservative Hashtag Generator',
-    desc: '#lyinsnowflake',
+    title: 'Political Discourse Hashtag Generator',
+    desc: 'This is how it seems like people communicate on Twitter',
     tags: ['jquery'],
     link: {
       url: 'https://zachkrall.github.io/conservative-hashtag/',
@@ -134,6 +135,16 @@ export const ProjectList = () => [
       title: 'View on CodePen'
     },
     image: '/img_Donations.png'
+  },
+  {
+    title: 'ReaderRx Custom CSS',
+    desc: 'Redesigned applicant review portal to improve legibility',
+    tags: ['css'],
+    link: {
+      url: 'https://gist.github.com/zachkrall/83c3bef9925fda700e275a29478f775d',
+      title: 'View Gist on GitHub'
+    },
+    image: '/img_ReaderRx.png'
   }
 ].map( ( { title, desc, link, tags, image } ) => {
     return <ProjectItem title={title} desc={desc} link={link} tags={tags} image={image} />
@@ -142,20 +153,22 @@ export const ProjectList = () => [
 export const InProgressList = () => [
   {
     title: 'Untitled Voice Art',
-    desc: '',
+    desc: 'Phonetic sound play in a random sequence allowing chance to carve out words and language',
     tags: ['openFrameworks'],
     link: {
-      url: '',
+      url: 'https://vimeo.com/243547454',
       title: 'Preview on Vimeo'
-    }
+    },
+    image: '/img_untitledvoice.png'
   },{
     title: 'Targeted Installation',
-    desc: '',
+    desc: 'A visual reminder that you devices are targets for surveillance',
     tags: ['p5.js'],
     link: {
-      url: '',
+      url: 'https://vimeo.com/249224545',
       title: 'Preview on Vimeo'
-    }
+    },
+    image: '/img_targeted.png'
   }
 ].map( ( { title, desc, link, tags, image } ) => {
     return <ProjectItem title={title} desc={desc} link={link} tags={tags} image={image} />
