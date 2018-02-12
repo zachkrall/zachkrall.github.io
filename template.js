@@ -8,7 +8,7 @@ class ProjectItem extends React.Component{
     return (
       <div className="project">
         <div className="image">
-          <a href={this.props.link.url}><img src={this.props.image} alt={this.props.title}/></a>
+          <a href={this.props.link.url}><img src={'./' + this.props.image} alt={this.props.title}/></a>
         </div>
         <h2>{this.props.title}</h2>
         <div className="desc">{this.props.desc}</div>
@@ -22,7 +22,7 @@ class ProjectItem extends React.Component{
 )}
 };
 ProjectItem.defaultProps = {
-  image: '/img_placeholder.jpg'
+  image: 'img_placeholder.jpg'
 };
 
 export const ProjectList = () => [
@@ -34,7 +34,7 @@ export const ProjectList = () => [
       url: 'https://codepen.io/zachkrall/full/zRZvyq/',
       title: 'View on CodePen'
     },
-    image: '/img_calculator.png'
+    image: 'img_calculator.png'
   },
   {
     title: 'Chinatown Soup',
@@ -44,7 +44,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/chinatown-soup',
       title: 'View'
     },
-    image: '/img_ChinatownSoup.png'
+    image: 'img_ChinatownSoup.png'
   },
   {
     title: 'zachkrall.com',
@@ -54,17 +54,17 @@ export const ProjectList = () => [
       url: 'https://zachkrall.com',
       title: 'Live Website'
     },
-    image: '/img_ZachKrall.png'
+    image: 'img_ZachKrall.png'
   },
   {
     title: 'Shaun Gladwell',
     desc: 'An archive for Shaun\'s publications',
-    tags: ['jquery'],
+    tags: ['vue-js'],
     link: {
       url: 'https://zachkrall.github.io/shaun-gladwell/',
       title: 'View'
     },
-    image: '/img_ShaunGladwell.png'
+    image: 'img_ShaunGladwell.png'
   },
   {
     title: 'zachkrall.github.io',
@@ -74,7 +74,7 @@ export const ProjectList = () => [
       url: 'https://github.com/zachkrall/zachkrall.github.io/tree/dev',
       title: 'View Source Code'
     },
-    image: '/img_this.png'
+    image: 'img_this.png'
   },
   {
     title: '404 Particle System',
@@ -84,7 +84,7 @@ export const ProjectList = () => [
       url: 'https://codepen.io/zachkrall/full/ZJbgLJ/',
       title: 'View on CodePen'
     },
-    image: '/img_404.png'
+    image: 'img_404.png'
   },
   {
     title: 'Stylized Text Generator',
@@ -94,7 +94,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/stylized-text-generator/',
       title: 'View'
     },
-    image: '/img_Clap.png'
+    image: 'img_Clap.png'
   },
   {
     title: 'Resume Chat',
@@ -104,7 +104,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/resume-chat/',
       title: 'View'
     },
-    image: '/img_ResumeChat.png'
+    image: 'img_ResumeChat.png'
   },
   {
     title: 'Kinect VR @ Art-A-Hack',
@@ -114,7 +114,7 @@ export const ProjectList = () => [
       url: 'https://artahack.io/projects/kinect-vr/',
       title: 'View Project Page'
     },
-    image: '/img_KinectVR.png'
+    image: 'img_KinectVR.png'
   },
   {
     title: 'Business Hours Indicator',
@@ -124,7 +124,7 @@ export const ProjectList = () => [
       url: 'https://codepen.io/zachkrall/full/Qgzzjg/',
       title: 'CodePen'
     },
-    image: '/img_Hours.png'
+    image: 'img_Hours.png'
   },
   {
     title: 'Political Discourse Hashtag Generator',
@@ -134,7 +134,7 @@ export const ProjectList = () => [
       url: 'https://zachkrall.github.io/conservative-hashtag/',
       title: 'View'
     },
-    image: '/img_ConservativeHashtag.png'
+    image: 'img_ConservativeHashtag.png'
   },
   {
     title: 'Donation Button',
@@ -144,7 +144,7 @@ export const ProjectList = () => [
       url: 'https://codepen.io/zachkrall/full/wdZpPY/',
       title: 'View on CodePen'
     },
-    image: '/img_Donations.png'
+    image: 'img_Donations.png'
   },
   {
     title: 'ReaderRx Custom CSS',
@@ -154,7 +154,7 @@ export const ProjectList = () => [
       url: 'https://gist.github.com/zachkrall/83c3bef9925fda700e275a29478f775d',
       title: 'View Gist on GitHub'
     },
-    image: '/img_ReaderRx.png'
+    image: 'img_ReaderRx.png'
   }
 ].map( ( { title, desc, link, tags, image } ) => {
     return <ProjectItem title={title} desc={desc} link={link} tags={tags} image={image} />

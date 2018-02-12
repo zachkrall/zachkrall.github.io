@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "phenomic start",
-    "build": "phenomic build"
+    "build": "phenomic build",
+    "ghpages": "git subtree push --prefix dist origin master"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
