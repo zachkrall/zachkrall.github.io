@@ -79,7 +79,7 @@ export const ProjectList = () => [
   {
     title: '404 Particle System',
     desc: 'How did it end up like this?',
-    tags: ['p5.js'],
+    tags: ['p5-js'],
     link: {
       url: 'https://codepen.io/zachkrall/full/ZJbgLJ/',
       title: 'View on CodePen'
@@ -173,7 +173,7 @@ export const InProgressList = () => [
   },{
     title: 'Targeted Installation',
     desc: 'A visual reminder that you devices are targets for surveillance',
-    tags: ['p5.js'],
+    tags: ['p5-js'],
     link: {
       url: 'https://vimeo.com/249224545',
       title: 'Preview on Vimeo'
