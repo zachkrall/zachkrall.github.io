@@ -26,6 +26,16 @@ ProjectItem.defaultProps = {
 };
 
 export const ProjectList = () => [
+    {
+    title: 'Twitter Image Screensaver',
+    desc: 'GETs twitter users most recent images from their timeline and bounces them around the screen using p5.js',
+    tags: ['node-js', 'express', 'p5-js', 'twitter-api'],
+    link: {
+      url: 'https://zachkrall-twitter.glitch.me/',
+      title: 'View on Glitch'
+    },
+    image: 'img_twitter.png'
+  },
   {
     title: 'Calculator',
     desc: 'It does math!',
