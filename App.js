@@ -16,8 +16,16 @@ const Home = () => (
       <meta name="description" content="" />
     </Head>
 
+    <nav>
+      <ul>
+        <li><a href="http://zachkrall.online">Homepage</a></li>
+        <li><a href="https://resume.zachkrall.com">Resume</a></li>
+        <li><a href="https://github.com/zachkrall">GitHub Profile</a></li>
+      </ul>
+    </nav>
+
     <header>
-      <h1>Zach Krall is a front-end developer located in Brooklyn, NY.</h1>
+      <h1>Zach Krall is an artist based in NYC working with code and generative visuals</h1>
     </header>
 
     <div id="projects" className="projectWrapper">
