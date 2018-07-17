@@ -7,6 +7,7 @@ class ProjectItem extends React.Component{
   render(){
     return (
       <div className="project">
+        <div className="border">
         <div className="image">
           <a href={this.props.link.url}><img src={'./' + this.props.image} alt={this.props.title}/></a>
         </div>
@@ -17,7 +18,10 @@ class ProjectItem extends React.Component{
             <span>#{item}&nbsp;</span>
           )}
         </div>
+        <div className="theLink">
         <a href={this.props.link.url}>{this.props.link.title} &rarr;</a>
+        </div>
+        </div>
       </div>
 )}
 };
@@ -97,11 +101,11 @@ export const ProjectList = () => [
     image: 'img_404.png'
   },
   {
-    title: 'Stylized Text Generator',
+    title: 'Emoji Text',
     desc: '👏 get 👏 your 👏 point 👏 across 👏',
     tags: ['javascript'],
     link: {
-      url: 'https://zachkrall.github.io/stylized-text-generator/',
+      url: 'https://zachkrall.github.io/emoji-text/',
       title: 'View'
     },
     image: 'img_Clap.png'
@@ -155,16 +159,6 @@ export const ProjectList = () => [
       title: 'View on CodePen'
     },
     image: 'img_Donations.png'
-  },
-  {
-    title: 'ReaderRx Custom CSS',
-    desc: 'Redesigned applicant review portal to improve legibility',
-    tags: ['css'],
-    link: {
-      url: 'https://gist.github.com/zachkrall/83c3bef9925fda700e275a29478f775d',
-      title: 'View Gist on GitHub'
-    },
-    image: 'img_ReaderRx.png'
   }
 ].map( ( { title, desc, link, tags, image } ) => {
     return <ProjectItem title={title} desc={desc} link={link} tags={tags} image={image} />

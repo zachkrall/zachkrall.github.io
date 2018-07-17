@@ -20,7 +20,7 @@ const Home = () => (
       <ul>
         <li><a href="http://zachkrall.online">Homepage</a></li>
         <li><a href="https://resume.zachkrall.com">Resume</a></li>
-        <li><a href="https://github.com/zachkrall">GitHub Profile</a></li>
+        <li><a href="https://github.com/zachkra">GitHub</a></li>
       </ul>
     </nav>
 

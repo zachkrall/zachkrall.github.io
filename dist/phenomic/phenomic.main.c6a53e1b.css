@@ -29,7 +29,7 @@ html{
 body{
   font-family:'Aktiv Grotesk','San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  background:#fefefe;
+  background:#eee;
   color:#1d1d1d;
 
   font-size:12pt;
@@ -56,8 +56,12 @@ nav{
   top:0;left:0;
   width:100%;
   text-align:left;
-  padding: 1.5rem 2em;
 
+}
+nav ul{
+  max-width:1500px;
+  margin:0 auto;
+  padding:2rem 2rem;
 }
 nav ul li{
   display:inline-block;
@@ -118,18 +122,48 @@ header h1{
   padding:2rem;
   width:calc(100%/3);
 }
-.project .image{
-
+.project .border{
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0px 0px 20px rgba(0,0,0,0.1);
+}
+.project .border h2{
+  padding:0.5rem 1rem;
+  font-size:1.5rem;
+}
+.project .border div{
+  padding:0em 1em 0.5rem 1rem;
+}
+.project .border .image{
+  padding:0;
 }
 .project .image img{
   width:100%;height:auto;
-  box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+  border-radius:20px 20px 0 0;
 }
 .project .tags{
   color:#5F728F;
 }
-
+.project .border div.theLink{
+  padding:1rem 1rem 1.5rem 1rem;
+  text-align:right;
+}
+.project .border div.theLink a{
+  padding:0.5rem 0.75rem;
+  background:#ddd;
+  border-radius:20px;
+  border-style:solid;
+  border-color:#ddd;
+  border-width:1px;
+  color:#000;
+}
+.project .border div.theLink a:hover{
+  background-color:#0000ff;
+  border-color:#0000ff;
+  color:#fff;
+}
 .pLink a:after{
+
   content:' \2197';
 }
 @media screen and (min-width: 750px) {
@@ -208,6 +242,7 @@ ul.contact li a{
   padding:0.5rem 1rem;
   border:1px solid #000;
   color:#000;
+  border-radius:20px;
 }
 ul.contact li a:hover{
   border-color:#00f;
