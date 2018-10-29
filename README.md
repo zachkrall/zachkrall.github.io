@@ -1,9 +1,3 @@
-# zachkrall.github.io
-github pages site
+# a fresh start
 
-## push to master branch for github pages
-``git subtree push --prefix dist origin master``
-
-or
-
-``npm run ghpages``
+re-building my developer portfolio by using `create-react-app`

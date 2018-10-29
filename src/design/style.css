@@ -1,0 +1,8 @@
+/*  -- style.css -- */
+/*  The main stylesheet for the entire page */
+
+*{
+  /* Master Reset */
+  margin:0;padding:0;
+  box-sizing:border-box;
+}
